@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Ketua OSIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="voting-container">
+        <h2>Pilih Ketua OSIS</h2>
+
+        <form id="votingForm">
+            <div class="kandidat">
+                <img src="kandidat1.jpeg" alt="Kandidat 1">
+                <input type="radio" name="kandidat" value="Kandidat 1" required>
+                <label for="kandidat1">Kandidat 1</label>
+            </div>
+
+            <div class="kandidat">
+                <img src="kandidat2.jpeg" alt="Kandidat 2">
+                <input type="radio" name="kandidat" value="Kandidat 2" required>
+                <label for="kandidat2">Kandidat 2</label>
+            </div>
+
+            <div class="kandidat">
+                <img src="kandidat3.jpeg" alt="Kandidat 3">
+                <input type="radio" name="kandidat" value="Kandidat 3" required>
+                <label for="kandidat3">Kandidat 3</label>
+            </div>
+
+            <button type="submit">Submit Vote</button>
+        </form>
+    </div>
+
+    <!-- Ucapan Terima Kasih -->
+    <div id="thankYouMessage" style="display:none;">
+        <h2>Terima kasih telah memberikan suara Anda!</h2>
+        <p>Anda telah memilih <span id="selectedCandidate"></span>. Suara Anda sangat berarti bagi kami.</p>
+        <h3>Hasil Voting Sementara:</h3>
+        <p>Kandidat 1: <span id="voteKandidat1">0</span> suara</p>
+        <p>Kandidat 2: <span id="voteKandidat2">0</span> suara</p>
+        <p>Kandidat 3: <span id="voteKandidat3">0</span> suara</p>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disable Refresh</title>
+  <script>
+    // Prevent refresh with F5 or Ctrl+R
+    window.addEventListener("keydown", function (e) {
+      if ((e.key === "F5") || (e.ctrlKey && e.key === "r")) {
+        e.preventDefault();
+        alert("Refresh has been disabled!");
+      }
+    });
+
+    // Prevent right-click refresh
+    window.onbeforeunload = function() {
+      return "You cannot refresh this page.";
+    };
+  </script>
+</head>
+<body>
+  <h1>Refresh is disabled on this page</h1>
+</body>
+</html>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

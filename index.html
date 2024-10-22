@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pemilihan Ketua OSIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Pemilihan Ketua OSIS</h2>
+        <form id="loginForm">
+            <label for="kelas">Pilih Kelas:</label>
+            <select id="kelas" required>
+                <option value="">Pilih Kelas</option>
+                <option value="kelas10">Kelas 10</option>
+                <option value="kelas11">Kelas 11</option>
+                <option value="kelas12">Kelas 12</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message" style="color:red;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
